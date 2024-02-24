@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "chai": "^5.1.0",
+    "cypress": "^13.6.6",
+    "mocha": "^10.3.0",
+    "mochawesome-merge": "^4.3.0",
+    "supertest": "^6.3.4",
+    "testcafe": "^3.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "mochawesome": "^7.1.3"
+  }
+}
