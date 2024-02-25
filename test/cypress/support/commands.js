@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Command to get the iFrame body
+Cypress.Commands.add('getiFrameBody', { prevSubject: 'element' }, ($iframe, callback = () => {}) => {
+    return cy
+        .wrap($iframe)
+        .should(iframe => expect(iframe.contents().find('body')).to.exist)
+        .then(iframe => cy.wrap(iframe.contents().find('body')))
+        .within({}, callback)
+  })

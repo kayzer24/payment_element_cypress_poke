@@ -48,7 +48,6 @@ app.get('/create-payment-intent', async (req, res) => {
       currency: 'EUR',
       amount: 1999,
       payment_method_types: ['card'],
-      //customer: process.env.CUSTOMER
     });
 
     // Send publishable key and PaymentIntent details to client
